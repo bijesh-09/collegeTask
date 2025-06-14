@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Lists</title>
+  <style>
+    body {
+      background: #004f60;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 200px;
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 15px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .fruits .header {
+      background: linear-gradient(to right, #a3d45f, #c4e538);
+    }
+
+    .vegetables .header {
+      background: linear-gradient(to right, #9b59b6, #74b9ff);
+    }
+
+    .groceries .header {
+      background: linear-gradient(to right, #e84393, #fdcb6e);
+    }
+
+    ol, ul {
+      margin: 0;
+      padding: 0 20px 20px;
+    }
+
+    li {
+      font-weight: bold;
+      padding: 10px 0;
+    }
+
+    .vegetables ul {
+      list-style-type: square;
+    }
+
+    .groceries ul {
+      list-style-type: disc;
+    }
+
+    .fruits ol {
+      list-style-type: decimal;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Lists</h1>
+
+  <div class="card fruits">
+    <div class="header">Fruits</div>
+    <ol>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Orange</li>
+    </ol>
+  </div>
+
+  <div class="card vegetables">
+    <div class="header">Vegetables</div>
+    <ul>
+      <li>Potato</li>
+      <li>Tomato</li>
+      <li>Onion</li>
+    </ul>
+  </div>
+
+  <div class="card groceries">
+    <div class="header">Groceries</div>
+    <ul>
+      <li>Rice</li>
+      <li>Flour</li>
+      <li>Pulses</li>
+    </ul>
+  </div>
+
+</body>
+</html>
